@@ -14,6 +14,9 @@ const Header = ({ text }) => (
     <div className={styles.demoTag}>
       <span>Demostración</span>
     </div>
+    <div className={styles.demoTagMobile}>
+      <span>Demo</span>
+    </div>
   </div>
 );
 

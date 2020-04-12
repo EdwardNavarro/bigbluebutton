@@ -1,6 +1,7 @@
 @import "/imports/ui/stylesheets/variables/_all";
 
 .head {
+  font-family: var(--font-family-gothic);
   height: 60px;
   width: 100vw;
   overflow: hidden;
@@ -25,15 +26,28 @@
     align-self: center;
   }
 
-  .demoTag {
+  .demoTag, .demoTagMobile {
     padding: 0 20px;
     display: flex;
     margin-left: auto;
-    order: 3;
     background-color: var(--color-danger);
 
     > span {
       align-self: center;
     }
+  }
+
+  .demoTag {
+    @include mq($xsmall-only) {
+      display: none;
+    }
+    order: 3;
+  }
+
+  .demoTagMobile {
+    @include mq($small-up) {
+      display: none;
+    }
+    order: 3;
   }
 }
