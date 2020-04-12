@@ -1,0 +1,25 @@
+@import "/imports/ui/stylesheets/variables/_all";
+
+.head {
+  height: 60px;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: var(--color-black);
+  color: var(--color-white);
+
+  .logo {
+    margin-left: 10px;
+    display: flex;
+
+    img {
+      height: 45px;
+    }
+  }
+
+  .headTitle {
+    margin-left: 20px;
+  }
+}
