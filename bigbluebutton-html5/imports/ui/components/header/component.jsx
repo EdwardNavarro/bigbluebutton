@@ -11,11 +11,14 @@ const Header = ({ text }) => (
       />
     </div>
     <div className={styles.headTitle}>{text}</div>
+    <div className={styles.demoTag}>
+      <span>Demostración</span>
+    </div>
   </div>
 );
 
 Header.propTypes = {
-  text: PropTypes.string.isRequired
+  text: PropTypes.string.isRequired,
 };
 
 export default Header;

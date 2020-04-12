@@ -6,7 +6,7 @@
   overflow: hidden;
   display: flex;
   justify-content: start;
-  align-items: center;
+  align-items: stretch;
   background-color: var(--color-black);
   color: var(--color-white);
 
@@ -15,11 +15,25 @@
     display: flex;
 
     img {
+      align-self: center;
       height: 45px;
     }
   }
 
   .headTitle {
     margin-left: 20px;
+    align-self: center;
+  }
+
+  .demoTag {
+    padding: 0 20px;
+    display: flex;
+    margin-left: auto;
+    order: 3;
+    background-color: var(--color-danger);
+
+    > span {
+      align-self: center;
+    }
   }
 }
