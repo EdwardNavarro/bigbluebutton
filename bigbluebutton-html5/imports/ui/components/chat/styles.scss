@@ -2,15 +2,15 @@
 @import "/imports/ui/stylesheets/variables/_all";
 
 :root {
-  --toast-content-width: 98%; 
+  --toast-content-width: 98%;
   --toast-font-size: 80%;
-  --toast-content-margin-sm: .4rem; 
+  --toast-content-margin-sm: .4rem;
   --toast-content-margin-md: 1.4rem;
 }
 
 @mixin lineClamp($lineHeight: 1em, $lineCount: 1) {
   position: relative;
-  white-space: nowrap; 
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: $lineHeight;
@@ -18,7 +18,7 @@
 }
 
 .chat {
-  background-color: var(--color-white);
+  background-color: var(--color-gray-dark);
   padding:
     var(--md-padding-x)
     var(--md-padding-y)
@@ -54,7 +54,8 @@
 
 .hideBtn {
   position: relative;
-  background-color: var(--color-white);
+  background-color: var(--color-gray-dark);
+  color: var(--color-white);
   display: block;
   margin: var(--border-size-large);
   margin-bottom: var(--border-size);
@@ -67,7 +68,7 @@
   }
 
   > i {
-      color: var(--color-gray-dark);
+      color: var(--color-white);
       font-size: smaller;
 
       [dir="rtl"] & {
@@ -80,7 +81,8 @@
   }
 
   &:hover {
-      background-color: var(--color-white);
+      background-color: var(--color-gray-dark);
+      color: var(--color-white);
   }
 }
 

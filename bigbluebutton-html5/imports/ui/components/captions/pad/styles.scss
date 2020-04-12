@@ -18,7 +18,7 @@
 }
 
 .pad {
-  background-color: var(--color-white);
+  background-color: var(--color-gray-dark);
   padding: var(--md-padding-x);
   display: flex;
   flex-grow: 1;
@@ -36,7 +36,7 @@
   flex-shrink: 0;
 
   a {
-    @include elementFocus(var(--color-primary));
+    @include elementFocus(var(--color-danger));
     padding-bottom: var(--sm-padding-y);
     padding-left: var(--sm-padding-y);
     text-decoration: none;
@@ -62,18 +62,20 @@
 
 .hideBtn {
   position: relative;
-  background-color: var(--color-white);
+  background-color: var(--color-gray-dark);
+  color: var(--color-white);
   display: block;
   margin: 4px;
   margin-bottom: 2px;
   padding-left: 0px;
 
   > i {
-    color: black;
+    color: var(--color-white);
   }
 
   &:hover {
-    background-color: var(--color-white);
+    background-color: var(--color-gray-dark);
+    color: var(--color-gray-lightest);
   }
 }
 

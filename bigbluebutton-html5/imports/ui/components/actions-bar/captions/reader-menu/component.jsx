@@ -382,7 +382,7 @@ class ReaderMenu extends PureComponent {
               onClick={closeModal}
             />
             <Button
-              color="primary"
+              color="danger"
               label={intl.formatMessage(intlMessages.start)}
               onClick={() => this.handleStart()}
               disabled={locale == null}

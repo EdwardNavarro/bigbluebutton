@@ -49,7 +49,7 @@
 }
 
 .input {
-  @include inputFocus(var(--color-blue-light));
+  @include inputFocus(var(--color-danger));
 
   flex: 1;
   background: #fff;
@@ -103,7 +103,7 @@
 .error,
 .info {
   font-size: calc(var(--font-size-base) * .75);
-  color: var(--color-gray-dark);
+  color: var(--color-danger);
   text-align: left;
   padding: var(--border-size) 0;
 
@@ -144,6 +144,7 @@
   flex-direction: row;
 
   > span {
+    color: var(--color-white);
     display: flex;
     flex-direction: row;
     width: 100%;

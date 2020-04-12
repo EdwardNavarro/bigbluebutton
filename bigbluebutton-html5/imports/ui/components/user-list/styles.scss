@@ -9,8 +9,8 @@
 // TODO: would be better to have those variables scoped and not global
 :root {
   --unread-messages-bg: var(--color-danger);
-  --user-list-text: var(--color-gray);
-  --user-list-bg: var(--color-off-white);
+  --user-list-text: var(--color-white);
+  --user-list-bg: var(--color-black-2);
 
   --user-thumbnail-border: var(--color-gray-light);
   --user-thumbnail-text: var(--user-thumbnail-border);
@@ -26,8 +26,8 @@
   --user-icons-color: var(--color-gray-light);
   --user-icons-color-hover: var(--color-gray);
 
-  --list-item-bg-hover: #dce4ed;
-  --item-focus-border: var(--color-blue-lighter);
+  --list-item-bg-hover: #fde4e4;
+  --item-focus-border: #f9a8a8;
 }
 
 /* classes for extending
@@ -65,14 +65,29 @@
   &:hover {
     @include highContrastOutline();
     background-color: var(--list-item-bg-hover);
+    color: var(--color-gray-dark) !important;
+
+    > {
+      color: var(--color-gray-dark) !important;
+    }
+
+    .userItemContents > .userName > .userNameMain > span,
+    .userItemContents > .userName > .userNameSub > span {
+      color: var(--color-gray-dark);
+    }
   }
 
   &:active,
   &:focus {
     @include highContrastOutline();
+    color: var(--color-gray-dark);
     outline-style: solid;
     background-color: var(--list-item-bg-hover);
     box-shadow: inset 0 0 0 var(--border-size) var(--item-focus-border), inset 1px 0 0 1px var(--item-focus-border);
+
+    > {
+      color: var(--color-gray-dark);
+    }
   }
 }
 
@@ -138,7 +153,7 @@
   text-transform: uppercase;
   padding: 0 var(--sm-padding-x);
   margin: 0 0 (var(--lg-padding-x) / 2) 0;
-  color: var(--color-gray);
+  color: var(--color-gray-lighter);
 }
 
 .userListColumn {
@@ -154,7 +169,7 @@
 .enterActive,
 .appearActive {
   opacity: 1;
-  
+
   :global(.animationsEnabled) & {
     transition: all 600ms;
   }

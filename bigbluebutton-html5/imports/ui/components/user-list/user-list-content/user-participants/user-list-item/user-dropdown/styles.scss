@@ -31,7 +31,7 @@
 .leaveActive {
   opacity: 0;
   max-height: 0rem;
-  
+
   :global(.animationsEnabled) & {
     transition: all 500ms;
   }
@@ -131,6 +131,6 @@
 .emojiSelected {
   span,
   i {
-    color: var(--color-primary);
+    color: var(--color-danger);
   }
 }

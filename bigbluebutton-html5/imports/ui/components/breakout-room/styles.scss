@@ -4,8 +4,8 @@
 @import "/imports/ui/components/user-list/user-list-content/styles";
 
 .panel {
-  @include scrollbox-vertical();
-  background-color: #fff;
+  @include scrollbox-vertical(var(--color-gray-dark));
+  background-color: var(--color-gray-dark);
   padding: var(--md-padding-x);
   display: flex;
   flex-grow: 1;
@@ -32,14 +32,15 @@
   padding-left: 0;
   padding-right: inherit;
   background: none !important;
+  color: var(--color-white);
   [dir="rtl"] & {
     margin: 0 0 2rem auto;
     padding-left: inherit;
     padding-right: 0;
   }
-  
+
   > i  {
-    color: var(--color-gray-dark);
+    color: var(--color-white);
 
     [dir="rtl"] & {
       -webkit-transform: scale(-1, 1);
@@ -49,6 +50,10 @@
       transform: scale(-1, 1);
     }
   }
+
+  &:hover {
+    color: var(--color-white);
+  }
 }
 
 .content {
@@ -57,11 +62,12 @@
   flex-direction: row;
   justify-content: space-between;
   font-weight: bold;
+  color: var(--color-white);
 }
 
 .breakoutActions {
   font-weight: var(--headings-font-weight);
-  color: var(--color-primary);
+  color: var(--color-danger);
   & > button {
     padding: 0 0 0 .5rem;
   }
@@ -75,7 +81,7 @@
 .joinButton,
 .button {
   flex: 0 1 48%;
-  color: var(--color-primary);
+  color: var(--color-danger);
   margin: 0;
   font-weight: inherit;
 }
@@ -88,12 +94,12 @@
   padding: .5rem;
   font-weight: var(--headings-font-weight) !important;
   border-radius: .2rem;
-  font-size: var(--font-size-small);  
+  font-size: var(--font-size-small);
 }
 
 .overlayContainer {
   position: fixed;
-  top: 0; 
+  top: 0;
   left: 0;
   right: auto;
   z-index: 100;
@@ -141,6 +147,7 @@
   display: flex;
   align-self: center;
   margin: .5rem 0 .5rem 0;
+  color: var(--color-white);
 }
 
 .usersAssignedNumberLabel {
@@ -159,6 +166,7 @@
   white-space: pre-line;
   margin-left: 1rem;
   font-size: var(--font-size-small);
+  color: var(--color-white);
 }
 
 .breakoutColumn {

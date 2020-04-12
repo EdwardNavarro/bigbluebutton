@@ -74,8 +74,8 @@ const Chat = (props) => {
               <Button
                 icon="close"
                 size="sm"
+                color="default"
                 ghost
-                color="dark"
                 hideLabel
                 onClick={() => {
                   actions.handleClosePrivateChat(chatID);

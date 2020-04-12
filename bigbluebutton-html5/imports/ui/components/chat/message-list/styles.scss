@@ -25,7 +25,7 @@
 }
 
 .messageList {
-  @include scrollbox-vertical();
+  @include scrollbox-vertical(#292929);
   flex-flow: column;
   flex-grow: 1;
   flex-shrink: 1;
@@ -33,6 +33,7 @@
   right: 0 var(--md-padding-x) 0 0;
   padding-top: 0;
   width: 100%;
+  color: var(--color-white);
 
   [dir="rtl"] & {
     margin: 0 0 0 auto;

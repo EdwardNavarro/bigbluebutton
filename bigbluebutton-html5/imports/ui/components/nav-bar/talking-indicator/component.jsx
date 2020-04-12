@@ -63,7 +63,7 @@ class TalkingIndicator extends PureComponent {
           label={callerName}
           aria-label={ariaLabel}
           aria-describedby={talking ? 'description' : null}
-          color="primary"
+          color="danger"
           icon={icon}
           size="sm"
           style={{

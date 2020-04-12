@@ -193,7 +193,7 @@ class LiveResult extends PureComponent {
                 stopPoll();
               }}
               label={intl.formatMessage(intlMessages.publishLabel)}
-              color="primary"
+              color="danger"
               className={styles.btn}
             />
           ) : (

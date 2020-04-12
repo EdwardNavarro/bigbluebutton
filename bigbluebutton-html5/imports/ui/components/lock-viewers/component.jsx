@@ -364,7 +364,7 @@ class LockViewersComponent extends Component {
               onClick={closeModal}
             />
             <Button
-              color="primary"
+              color="danger"
               label={intl.formatMessage(intlMessages.buttonApply)}
               onClick={() => {
                 updateLockSettings(lockSettingsProps);

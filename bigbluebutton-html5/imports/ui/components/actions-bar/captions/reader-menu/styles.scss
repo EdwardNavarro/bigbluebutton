@@ -89,7 +89,7 @@
 
 .swatch {
   flex: 1 0 0;
-  @include elementFocus(var(--color-primary));
+  @include elementFocus(var(--color-danger));
   border-radius: var(--border-size);
   border: var(--border-size) solid var(--color-gray-light);
   display: inline-block;
@@ -108,5 +108,3 @@
   justify-content: space-between;
   padding: .2rem 0 .2rem 0;
 }
-
-

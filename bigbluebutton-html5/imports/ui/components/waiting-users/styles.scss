@@ -18,7 +18,7 @@
   flex-shrink: 0;
 
   a {
-    @include elementFocus(var(--color-primary));
+    @include elementFocus(var(--color-danger));
     padding: 0 0 var(--sm-padding-y) var(--sm-padding-y);
     text-decoration: none;
     display: block;
@@ -89,7 +89,7 @@
   display: flex;
   flex-flow: row;
   flex-direction: row;
-  align-items: center; 
+  align-items: center;
   justify-content: space-between;
   border-radius: 5px;
   cursor: pointer;
@@ -117,7 +117,7 @@
   display: flex;
   justify-self: flex-end;
   align-items: center;
-  color: var(--color-primary);
+  color: var(--color-danger);
   & > button {
     padding: 0 .25rem 0 .25rem;
   }
@@ -132,7 +132,7 @@
 
 .button {
   font-weight: 400;
-  
+
   &:focus {
     background-color: var(--list-item-bg-hover) !important;
     box-shadow: inset 0 0 0 var(--border-size) var(--item-focus-border), inset 1px 0 0 1px var(--item-focus-border) ;

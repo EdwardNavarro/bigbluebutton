@@ -77,7 +77,7 @@ class Polling extends Component {
                   <Button
                     disabled={!isMeteorConnected}
                     className={styles.pollingButton}
-                    color="primary"
+                    color="danger"
                     size="md"
                     label={label}
                     key={pollAnswer.key}

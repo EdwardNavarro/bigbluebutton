@@ -2,7 +2,7 @@
 @import "/imports/ui/stylesheets/variables/_all";
 
 .note {
-  background-color: var(--color-white);
+  background-color: var(--color-gray-dark);
   padding: var(--md-padding-x);
   display: flex;
   flex-grow: 1;
@@ -20,7 +20,7 @@
   flex-shrink: 0;
 
   a {
-    @include elementFocus(var(--color-primary));
+    @include elementFocus(var(--color-danger));
     padding: 0 0 var(--sm-padding-y) var(--sm-padding-y);
     text-decoration: none;
     display: block;
@@ -49,7 +49,8 @@
 
 .hideBtn {
   position: relative;
-  background-color: var(--color-white);
+  background-color: var(--color-gray-dark);
+  color: var(--color-white);
   display: block;
   margin: 4px;
   margin-bottom: 2px;
@@ -60,11 +61,11 @@
   }
 
   > i {
-    color: black;
+    color: var(--color-white);;
   }
 
   &:hover {
-    background-color: var(--color-white);
+    background-color: var(--color-gray-dark);
   }
 }
 

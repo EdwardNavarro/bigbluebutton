@@ -4,12 +4,12 @@
   --hover-color: #0c5cb2;
   margin: 0 !important;
   background-color: transparent;
-  color: var(--color-primary);
+  color: var(--color-danger);
   font-weight: normal;
   border: none;
 
   i {
-    color: var(--color-primary);
+    color: var(--color-danger);
 
     :global(.animationsEnabled) & {
       transition: all .2s ease-in-out;

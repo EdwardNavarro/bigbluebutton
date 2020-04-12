@@ -209,7 +209,7 @@ class MeetingEnded extends React.PureComponent {
               </div>
             ) : null }
             <Button
-              color="primary"
+              color="danger"
               onClick={this.sendFeedback}
               className={styles.button}
               label={noRating

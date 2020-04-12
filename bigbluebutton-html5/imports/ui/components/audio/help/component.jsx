@@ -57,7 +57,7 @@ class Help extends Component {
             className={styles.backBtn}
             label={intl.formatMessage(intlMessages.backLabel)}
             size="md"
-            color="primary"
+            color="danger"
             onClick={handleBack}
             ghost
           />

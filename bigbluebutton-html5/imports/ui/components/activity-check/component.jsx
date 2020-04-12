@@ -95,7 +95,7 @@ class ActivityCheck extends Component {
           <h1>{intl.formatMessage(intlMessages.activityCheckTitle)}</h1>
           <p>{intl.formatMessage(intlMessages.activityCheckLabel, { 0: responseDelay })}</p>
           <Button
-            color="primary"
+            color="danger"
             label={intl.formatMessage(intlMessages.activityCheckButton)}
             onClick={handleInactivityDismiss}
             role="button"

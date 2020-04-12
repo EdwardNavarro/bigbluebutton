@@ -33,7 +33,7 @@ const FallbackPresentation = ({ error, intl }) => (
     <div>
       <Button
         size="sm"
-        color="primary"
+        color="danger"
         className={styles.button}
         onClick={() => window.location.reload()}
         label={intl.formatMessage(intlMessages.reloadButton)}

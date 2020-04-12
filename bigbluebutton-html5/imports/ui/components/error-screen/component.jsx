@@ -84,7 +84,7 @@ class ErrorScreen extends React.PureComponent {
         <div>
           <Button
             size="sm"
-            color="primary"
+            color="danger"
             className={styles.button}
             onClick={logoutRouteHandler}
             label={intl.formatMessage(intlMessages.leave)}

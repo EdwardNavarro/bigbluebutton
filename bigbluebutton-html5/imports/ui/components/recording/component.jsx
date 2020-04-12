@@ -95,7 +95,7 @@ class RecordingComponent extends PureComponent {
           </div>
           <div className={styles.footer}>
             <Button
-              color="primary"
+              color="danger"
               className={styles.button}
               disabled={!isMeteorConnected}
               label={intl.formatMessage(intlMessages.yesLabel)}

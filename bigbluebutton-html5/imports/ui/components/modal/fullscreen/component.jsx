@@ -123,7 +123,7 @@ class ModalFullscreen extends PureComponent {
             />
             <Button
               data-test="modalConfirmButton"
-              color="primary"
+              color="danger"
               className={popoutIcon ? cx(styles.confirm, styles.popout) : styles.confirm}
               label={confirm.label || intl.formatMessage(intlMessages.modalDone)}
               aria-label={confirmAriaLabel}

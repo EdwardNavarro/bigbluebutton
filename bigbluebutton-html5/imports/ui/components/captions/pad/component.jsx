@@ -210,7 +210,7 @@ class Pad extends PureComponent {
                     : intl.formatMessage(intlMessages.dictationStart)
                   }
                   aria-describedby="dictationBtnDesc"
-                  color="primary"
+                  color="danger"
                   disabled={!this.recognition}
                 />
                 <div id="dictationBtnDesc" hidden>
@@ -225,7 +225,7 @@ class Pad extends PureComponent {
           {CaptionsService.canIOwnThisPad(ownerId)
             ? (
               <Button
-                color="primary"
+                color="danger"
                 tooltipLabel={intl.formatMessage(intlMessages.takeOwnershipTooltip, { 0: name })}
                 onClick={() => { CaptionsService.takeOwnership(locale); }}
                 aria-label={intl.formatMessage(intlMessages.takeOwnership)}

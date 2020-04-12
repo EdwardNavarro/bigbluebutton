@@ -76,7 +76,7 @@ const renderGuestUserItem = (name, color, handleAccept, handleDeny, role, sequen
       <Button
         key={`userbtn-accept-${userId}`}
         className={styles.button}
-        color="primary"
+        color="danger"
         size="lg"
         ghost
         label="Accept"
@@ -86,7 +86,7 @@ const renderGuestUserItem = (name, color, handleAccept, handleDeny, role, sequen
       <Button
         key={`userbtn-deny-${userId}`}
         className={styles.button}
-        color="primary"
+        color="danger"
         size="lg"
         ghost
         label="Deny"
@@ -148,7 +148,7 @@ const WaitingUsers = (props) => {
   const renderButton = (message, { key, policy, action }) => (
     <Button
       key={key}
-      color="primary"
+      color="danger"
       label={message}
       size="lg"
       onClick={changePolicy(rememberChoice, policy, action)}

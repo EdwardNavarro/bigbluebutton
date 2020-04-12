@@ -402,7 +402,7 @@ class AudioModal extends Component {
             className={styles.audioDial}
             label={dialAudioLabel}
             size="md"
-            color="primary"
+            color="danger"
             onClick={() => {
               this.setState({
                 content: 'audioDial',

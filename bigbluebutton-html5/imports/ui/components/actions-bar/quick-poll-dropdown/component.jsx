@@ -105,7 +105,7 @@ const QuickPollDropdown = (props) => {
           aria-label={intl.formatMessage(intlMessages.quickPollLabel)}
           circle
           className={styles.button}
-          color="primary"
+          color="danger"
           hideLabel
           icon="polling"
           label={intl.formatMessage(intlMessages.quickPollLabel)}

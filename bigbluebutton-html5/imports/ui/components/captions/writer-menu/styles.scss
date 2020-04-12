@@ -34,7 +34,7 @@
 }
 
 .select {
-  @include elementFocus(var(--color-primary));
+  @include elementFocus(var(--color-danger));
 
   background-color: var(--color-white);
   border: var(--border-size) solid var(--color-white);

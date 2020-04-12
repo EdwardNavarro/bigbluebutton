@@ -327,7 +327,7 @@ class BreakoutRoom extends PureComponent {
           amIModerator
             ? (
               <Button
-                color="primary"
+                color="danger"
                 disabled={!isMeteorConnected}
                 size="lg"
                 label={intl.formatMessage(intlMessages.endAllBreakouts)}

@@ -11,6 +11,10 @@
   [dir="rtl"]  & {
     margin: 0 var(--sm-padding-x) 0 0;
   }
+
+  .listItem:hover  {
+    color: var(--color-gray-dark);
+  }
 }
 
 .userNameMain {
@@ -20,7 +24,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   font-weight: 400;
-  color: var(--color-gray-dark);
+  // color: var(--color-gray-lightest);
   display: flex;
   flex-direction: row;
 
@@ -28,6 +32,10 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+  }
+
+  &:hover {
+    color: var(--color-gray-dark);
   }
 
   :global(.animationsEnabled) & {
@@ -39,7 +47,7 @@
   @extend %no-margin;
   font-size: 0.75rem;
   font-weight: 200;
-  color: var(--color-gray);
+  // color: var(--color-gray-light);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

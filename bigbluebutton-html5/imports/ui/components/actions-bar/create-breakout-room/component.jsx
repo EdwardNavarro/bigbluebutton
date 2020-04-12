@@ -659,7 +659,7 @@ class BreakoutRoom extends PureComponent {
                   label={intl.formatMessage(intlMessages.addParticipantLabel)}
                   size="lg"
                   ghost
-                  color="primary"
+                  color="danger"
                   onClick={() => onClick(idx + 1)}
                 />
               </div>
@@ -731,7 +731,7 @@ class BreakoutRoom extends PureComponent {
   renderButtonSetLevel(level, label) {
     return (
       <Button
-        color="primary"
+        color="danger"
         size="lg"
         label={label}
         onClick={() => this.setState({ formFillLevel: level })}

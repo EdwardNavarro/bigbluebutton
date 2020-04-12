@@ -109,7 +109,7 @@ class SortUsers extends Component {
             className={styles.buttonAdd}
             size="md"
             label={intl.formatMessage(intlMessages.doneLabel)}
-            color="primary"
+            color="danger"
             onClick={confirm}
           />
         </header>

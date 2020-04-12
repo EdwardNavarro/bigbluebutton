@@ -343,7 +343,7 @@ class ApplicationMenu extends BaseMenu {
                   <div className={styles.col}>
                     <Button
                       onClick={() => this.handleDecreaseFontSize()}
-                      color="primary"
+                      color="danger"
                       icon="substract"
                       circle
                       hideLabel
@@ -355,7 +355,7 @@ class ApplicationMenu extends BaseMenu {
                   <div className={styles.col}>
                     <Button
                       onClick={() => this.handleIncreaseFontSize()}
-                      color="primary"
+                      color="danger"
                       icon="add"
                       circle
                       hideLabel

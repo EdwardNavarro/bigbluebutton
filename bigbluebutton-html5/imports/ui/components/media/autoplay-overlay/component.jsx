@@ -36,7 +36,7 @@ class AutoplayOverlay extends PureComponent {
             {autoplayBlockedDesc}
           </div>
           <Button
-            color="primary"
+            color="danger"
             label={autoplayAllowLabel}
             onClick={handleAllowAutoplay}
             role="button"
