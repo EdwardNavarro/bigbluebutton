@@ -5,7 +5,7 @@
 :root {
     --poll-column-amount: 2;
     --poll-blue: #1A73D4;
-    --poll-red: #EE3436;
+    --poll-green: #00BBB4;
     --poll-header-offset: -0.875rem;
 }
 
@@ -135,12 +135,12 @@
 
 .customBtn:hover,
 .pollBtn:hover {
-    box-shadow: 0 0 0 1px var(--poll-red);
+    box-shadow: 0 0 0 1px var(--poll-green);
     background-color: var(--color-white);
-    color: var(--poll-red);
+    color: var(--poll-green);
 
     > span {
-        color: var(--poll-red);
+        color: var(--poll-green);
         opacity: 1;
     }
 }
@@ -158,7 +158,7 @@
     }
 
     > span:hover {
-        color: var(--poll-red);
+        color: var(--poll-green);
         opacity: 1;
     }
 }
@@ -166,24 +166,24 @@
 .customBtn:active,
 .pollBtn:active {
     &:focus {
-        box-shadow: 0 0 0 1px var(--poll-red);
+        box-shadow: 0 0 0 1px var(--poll-green);
     }
 
     background-color: var(--color-white);
-    box-shadow: 0 0 0 1px var(--poll-red);
+    box-shadow: 0 0 0 1px var(--poll-green);
 
     > span {
-        color: var(--poll-red);
+        color: var(--poll-green);
     }
 }
 
 .customBtn:focus,
 .pollBtn:focus {
     background-color: var(--color-white);
-    box-shadow: 0 0 0 1px var(--poll-red);
+    box-shadow: 0 0 0 1px var(--poll-green);
 
     > span {
-        color: var(--poll-red);
+        color: var(--poll-green);
     }
 }
 

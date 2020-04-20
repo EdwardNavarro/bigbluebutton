@@ -30,13 +30,12 @@ with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
     body {
       position: fixed;
       height: 100%;
-      font-family: 'Century Gothic', Arial, sans-serif;
+      font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
       font-size: 1rem; /* 16px */
       background-color: #292929;
-      background-repeat: no-repeat;
-      background-position: center center;
+      background-repeat: repeat;
+      background-position: left top;
       background-attachment: fixed;
-      background-size: cover !important;
       display:flex;
       flex-direction:column;
       justify-content:center;
@@ -90,17 +89,9 @@ with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
   <!-- Vinter HTML5 client background manager. -->
   <script language="javascript">
     function randombg(){
-      var random= Math.floor(Math.random() * 10) + 0;
-      var bigSize = ["url('https://vinter-cdn.us-east-1.linodeobjects.com/bg_vinter_bbb_client_1.jpg')",
-                     "url('https://vinter-cdn.us-east-1.linodeobjects.com/bg_vinter_bbb_client_2.jpg')",
-                     "url('https://vinter-cdn.us-east-1.linodeobjects.com/bg_vinter_bbb_client_3.jpg')",
-                     "url('https://vinter-cdn.us-east-1.linodeobjects.com/bg_vinter_bbb_client_4.jpg')",
-                     "url('https://vinter-cdn.us-east-1.linodeobjects.com/bg_vinter_bbb_client_5.jpg')",
-                     "url('https://vinter-cdn.us-east-1.linodeobjects.com/bg_vinter_bbb_client_1.jpg')",
-                     "url('https://vinter-cdn.us-east-1.linodeobjects.com/bg_vinter_bbb_client_2.jpg')",
-                     "url('https://vinter-cdn.us-east-1.linodeobjects.com/bg_vinter_bbb_client_3.jpg')",
-                     "url('https://vinter-cdn.us-east-1.linodeobjects.com/bg_vinter_bbb_client_4.jpg')",
-                     "url('https://vinter-cdn.us-east-1.linodeobjects.com/bg_vinter_bbb_client_5.jpg')"];
+      var random= Math.floor(Math.random() * 2) + 0;
+      var bigSize = ["url('https://creatividad-cdn.us-east-1.linodeobjects.com/bg_crea_bbb.jpg')",
+                     "url('https://creatividad-cdn.us-east-1.linodeobjects.com/bg_crea_bbb.jpg')"];
       document.body.style.backgroundImage=bigSize[random];
     }
     window.onload = randombg;

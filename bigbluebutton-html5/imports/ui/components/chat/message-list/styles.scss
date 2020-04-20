@@ -25,7 +25,7 @@
 }
 
 .messageList {
-  @include scrollbox-vertical(#292929);
+  @include scrollbox-vertical(var(--color-chat-panel));
   flex-flow: column;
   flex-grow: 1;
   flex-shrink: 1;

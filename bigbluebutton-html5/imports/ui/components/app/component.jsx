@@ -206,7 +206,7 @@ class App extends Component {
 
   renderHeader() {
     return (
-      <Header text="Meeting"/>
+      <Header text="MEETINGS"/>
     );
   }
 

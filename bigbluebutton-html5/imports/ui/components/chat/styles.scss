@@ -18,7 +18,7 @@
 }
 
 .chat {
-  background-color: var(--color-gray-dark);
+  background-color: var(--color-chat-panel);
   padding:
     var(--md-padding-x)
     var(--md-padding-y)
@@ -54,7 +54,7 @@
 
 .hideBtn {
   position: relative;
-  background-color: var(--color-gray-dark);
+  background-color: var(--color-chat-panel);
   color: var(--color-white);
   display: block;
   margin: var(--border-size-large);
@@ -81,7 +81,7 @@
   }
 
   &:hover {
-      background-color: var(--color-gray-dark);
+      background-color: var(--color-chat-panel);
       color: var(--color-white);
   }
 }
