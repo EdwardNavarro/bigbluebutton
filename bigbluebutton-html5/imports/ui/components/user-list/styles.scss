@@ -26,8 +26,8 @@
   --user-icons-color: var(--color-gray-light);
   --user-icons-color-hover: var(--color-gray);
 
-  --list-item-bg-hover: #d6fffe;
-  --item-focus-border: #99fffc;
+  --list-item-bg-hover: var(--color-aux-light);
+  --item-focus-border: var(--color-aux-lightest);
 }
 
 /* classes for extending

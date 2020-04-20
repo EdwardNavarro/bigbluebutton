@@ -8,16 +8,16 @@
   display: flex;
   justify-content: start;
   align-items: stretch;
-  background-color: var(--color-black);
-  color: var(--color-white);
+  background-color: var(--color-header-bg);
+  color: var(--color-header-text);
 
   .logo {
-    margin-left: 10px;
+    margin-left: 20px;
     display: flex;
 
     img {
       align-self: center;
-      height: 40px;
+      height: 36px;
     }
   }
 

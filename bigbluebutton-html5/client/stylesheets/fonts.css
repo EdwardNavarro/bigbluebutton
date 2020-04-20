@@ -224,3 +224,21 @@
        url('fonts/CenturyGothic/gothic.woff') format('woff'), url('fonts/CenturyGothic/gothic.ttf') format('truetype');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
+
+@font-face {
+  font-family: 'Segoe Pro Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Segoe Pro Regular'), local('SegoePro'),
+       url('fonts/SegoePro/SegoePro-Regular.woff') format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+  font-family: 'Segoe Pro Semibold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Segoe Pro Semibold'), local('SegoePro'),
+       url('fonts/SegoePro/SegoePro-Semibold.woff') format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}

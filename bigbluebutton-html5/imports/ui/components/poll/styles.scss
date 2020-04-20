@@ -5,7 +5,7 @@
 :root {
     --poll-column-amount: 2;
     --poll-blue: #1A73D4;
-    --poll-green: #00BBB4;
+    --poll-color: var(--color-danger);
     --poll-header-offset: -0.875rem;
 }
 
@@ -23,7 +23,7 @@
 
 .hideBtn {
     position: relative;
-    background-color: var(--color-gray-dark);
+    background-color: var(--color-chat-panel);
     color: var(--color-white);
     display: block;
     margin: var(--border-size-large);
@@ -52,7 +52,7 @@
     &:hover,
     &:focus {
         color: var(--color-white);
-        background-color: var(--color-gray-dark);
+        background-color: var(--color-chat-panel);
     }
   }
 
@@ -135,12 +135,12 @@
 
 .customBtn:hover,
 .pollBtn:hover {
-    box-shadow: 0 0 0 1px var(--poll-green);
+    box-shadow: 0 0 0 1px var(--poll-color);
     background-color: var(--color-white);
-    color: var(--poll-green);
+    color: var(--poll-color);
 
     > span {
-        color: var(--poll-green);
+        color: var(--poll-color);
         opacity: 1;
     }
 }
@@ -158,7 +158,7 @@
     }
 
     > span:hover {
-        color: var(--poll-green);
+        color: var(--poll-color);
         opacity: 1;
     }
 }
@@ -166,24 +166,24 @@
 .customBtn:active,
 .pollBtn:active {
     &:focus {
-        box-shadow: 0 0 0 1px var(--poll-green);
+        box-shadow: 0 0 0 1px var(--poll-color);
     }
 
     background-color: var(--color-white);
-    box-shadow: 0 0 0 1px var(--poll-green);
+    box-shadow: 0 0 0 1px var(--poll-color);
 
     > span {
-        color: var(--poll-green);
+        color: var(--poll-color);
     }
 }
 
 .customBtn:focus,
 .pollBtn:focus {
     background-color: var(--color-white);
-    box-shadow: 0 0 0 1px var(--poll-green);
+    box-shadow: 0 0 0 1px var(--poll-color);
 
     > span {
-        color: var(--poll-green);
+        color: var(--poll-color);
     }
 }
 

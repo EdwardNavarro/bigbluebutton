@@ -145,6 +145,10 @@
 
 .hyperlink {
   a {
-    color: var(--color-danger);
+    color: var(--color-link);
+
+    &:hover {
+      color: var(--color-link-hover);
+    }
   }
 }

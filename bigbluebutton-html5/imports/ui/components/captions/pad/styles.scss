@@ -18,7 +18,7 @@
 }
 
 .pad {
-  background-color: var(--color-gray-dark);
+  background-color: var(--color-chat-panel);
   padding: var(--md-padding-x);
   display: flex;
   flex-grow: 1;
@@ -62,7 +62,7 @@
 
 .hideBtn {
   position: relative;
-  background-color: var(--color-gray-dark);
+  background-color: var(--color-chat-panel);
   color: var(--color-white);
   display: block;
   margin: 4px;
@@ -74,8 +74,8 @@
   }
 
   &:hover {
-    background-color: var(--color-gray-dark);
-    color: var(--color-gray-lightest);
+    background-color: var(--color-chat-panel);
+    color: var(--color-white);
   }
 }
 
