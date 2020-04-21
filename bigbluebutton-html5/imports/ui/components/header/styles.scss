@@ -1,0 +1,53 @@
+@import "/imports/ui/stylesheets/variables/_all";
+
+.head {
+  font-family: var(--font-family-base);
+  height: 60px;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: start;
+  align-items: stretch;
+  background-color: var(--color-header);
+  color: var(--color-white);
+
+  .logo {
+    margin-left: 10px;
+    display: flex;
+
+    img {
+      align-self: center;
+      height: 40px;
+    }
+  }
+
+  .headTitle {
+    margin-left: 20px;
+    align-self: center;
+  }
+
+  .demoTag, .demoTagMobile {
+    padding: 0 20px;
+    display: flex;
+    margin-left: auto;
+    background-color: var(--color-demo-tag);
+
+    > span {
+      align-self: center;
+    }
+  }
+
+  .demoTag {
+    @include mq($xsmall-only) {
+      display: none;
+    }
+    order: 3;
+  }
+
+  .demoTagMobile {
+    @include mq($small-up) {
+      display: none;
+    }
+    order: 3;
+  }
+}

@@ -10,7 +10,7 @@
   flex-grow: 1;
   line-height: 2;
   color: var(--color-gray-dark);
-  background-color: var(--color-off-white);
+  background-color: var(--color-listitem-bg);
   padding-top: var(--lg-padding-y);
   padding-bottom: var(--lg-padding-y);
   padding-left: var(--lg-padding-y);
@@ -68,6 +68,6 @@
 }
 
 .active {
-  background-color: var(--list-item-bg-hover);
+  background-color: var(--color-listitem-bg);
   box-shadow: inset 0 0 0 var(--border-size) var(--item-focus-border), inset 1px 0 0 1px var(--item-focus-border);
 }
