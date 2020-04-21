@@ -6,7 +6,7 @@ const Header = ({ text }) => (
   <div className={styles.head}>
     <div className={styles.logo}>
       <img
-        src="https://umbrella-cdn.us-east-1.linodeobjects.com/logo_anahuac_bbb_top_header.png"
+        src="https://umbrella-cdn.us-east-1.linodeobjects.com/logo_rp_bbb_top_header.png"
         border="0"
       />
     </div>
